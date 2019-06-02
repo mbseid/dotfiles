@@ -63,11 +63,6 @@ fi
 step "Installing NVM"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 print_success "NVM installed!"
-step "Installing latest Node…"
-nvm install node
-nvm use node
-nvm run node --version
-nodev=$(node -v)
 print_success "Using Node $nodev!"
 
 
