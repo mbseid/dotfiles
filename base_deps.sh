@@ -1,8 +1,42 @@
 #!/usr/bin/env bash
 
+###############################################################################
+# VARIABLES
+###############################################################################
+
+count=1
+
+reset="\033[0m"
+highlight="\033[41m\033[97m"
+dot="\033[31m▸ $reset"
+dim="\033[2m"
+blue="\e[34m"
+green="\e[32m"
+yellow="\e[33m"
+tag_green="\e[30;42m"
+tag_blue="\e[30;46m"
+bold=$(tput bold)
+normal=$(tput sgr0)
+underline="\e[37;4m"
+indent="   "
+
+# Get full directory name of this script
+cwd="$(cd "$(dirname "$0")" && pwd)"
+
 
 step() {
     printf "\n   ${dot}${underline}$@${reset}\n"
+}
+
+_print_in_color() {
+    printf "%b" \
+        "$(tput setaf "$2" 2> /dev/null)" \
+        "$1" \
+        "$(tput sgr0 2> /dev/null)"
+}
+
+print_in_green() {
+    _print_in_color "$1" 2
 }
 
 print_success() {
