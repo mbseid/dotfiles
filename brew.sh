@@ -69,26 +69,24 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
-# MBS: Install more devtools
-brew install rbenv
-brew install redis
-brew install scala
-brew install yarn
-brew install hub
+# MBS: Install more devtools, nothing but docker
+brew install gh
 
 # MBS: Install Apps
-brew cask install alfred
-brew cask install google-chrome
-brew cask install firefox
-brew cask install sublime-text
-brew cask install intellij-idea
-brew cask install spotify
-brew cask install bartender
-brew cask install slack
-brew cask install docker
-brew cask install keepingyouawake
-brew cask install flux
-brew cask install postgres
+brew install --cask alfred
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask sublime-text
+brew install --cask intellij-idea
+brew install --cask visual-studio-code
+brew install --cask spotify
+brew install --cask bartender
+brew install --cask docker
+brew install --cask keepingyouawake
+brew install --cask flux
+brew install --cask rectangle
+brew install --cask karabiner-elements
+
 
 # Remove outdated versions from the cellar.
 brew cleanup

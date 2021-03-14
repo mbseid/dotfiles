@@ -12,6 +12,7 @@
 source base_deps.sh
 source bootstrap.sh
 source brew.sh
+source config.sh
 ```
 
 Helpful articles:
