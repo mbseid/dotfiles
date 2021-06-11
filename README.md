@@ -1,4 +1,4 @@
-# Mathias’s dotfiles
+# Mike Seid's dotfiles - based off of Mathias’s
 
 ![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
 
@@ -15,13 +15,20 @@ source brew.sh
 source config.sh
 ```
 
+Alternatively, to update while avoiding the confirmation prompt:
+
+```bash
+set -- -f; source bootstrap.sh
+```
+
+
 Helpful articles:
 
 https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 
 ### Specify the `$PATH`
 
-If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/mathiasbynens/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-26)) takes place.
+If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/mathiasbynens/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-L26)) takes place.
 
 Here’s an example `~/.path` file that adds `/usr/local/bin` to the `$PATH`:
 
@@ -69,7 +76,7 @@ Some of the functionality of these dotfiles depends on formulae installed by `br
 ## Feedback
 
 Suggestions/improvements
-[welcome](https://github.com/mathiasbynens/dotfiles/issues)!
+[welcome](https://github.com/mbseid/dotfiles/issues)!
 
 ## Author
 
