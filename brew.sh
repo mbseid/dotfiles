@@ -87,6 +87,7 @@ brew install --cask keepingyouawake
 brew install --cask flux
 brew install --cask rectangle
 brew install --cask karabiner-elements
+brew install --cask zoom
 
 
 # Remove outdated versions from the cellar.
