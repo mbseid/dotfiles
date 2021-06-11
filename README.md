@@ -21,6 +21,11 @@ Alternatively, to update while avoiding the confirmation prompt:
 set -- -f; source bootstrap.sh
 ```
 
+Add karabiner config folder. Then reboot karabiner:
+
+```bash
+cp karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+```
 
 Helpful articles:
 
